@@ -1,0 +1,8 @@
+//For creating tables//
+//column DATATYPE,//
+
+CREATE TABLE Employee (
+ID INT,
+NAME VARCHAR(60),
+Birthdate DATE,
+Salary DECIMAL(7,2);
