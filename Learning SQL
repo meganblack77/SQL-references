@@ -6,3 +6,41 @@ ID INT,
 NAME VARCHAR(60),
 Birthdate DATE,
 Salary DECIMAL(7,2);
+
+//More examples//
+
+CREATE TABLE Employee(
+Employee_id INT NOT NULL,
+First_name VARCHAR(30) NOT NULL,
+Last__name VARCHAR(30) NOT NULL,
+Hire_date DATE NOT NULL,
+Job_title VARCHAR(30) NOT NULL,
+shop_id INT NOT NULL,
+PRIMARY KEY (employee_id)
+  );
+
+CREATE TABLE Coffee_Shop(
+shop_id INT NOT NULL,
+shop_name VARCHAR(50) NOT NULL,
+city VARCHAR(50) NOT NULL,
+State CHAR(2) NOT NULL,
+PRIMARY KEY (shop_id)
+); 
+  
+CREATE TABLE Coffee(
+coffee_id INT NOT NULL,
+shop_id INT NOT NULL,
+supplier_id INT NOT NULL,
+coffee_name VARCHAR(30) NOT NULL,
+price_per_pound NUMERIC(5,2) NOT NULL,
+PRIMARY KEY (coffee_id)
+);
+ 
+CREATE TABLE Supplier(
+supplier_id INT NOT NULL,
+company_name VARCHAR(50) NOT NULL,
+country VARCHAR(30) NOT NULL,
+sales_contact_name VARCHAR(60) NOT NULL,
+email VARCHAR(50) NOT NULL,
+PRIMARY KEY (supplier_id)
+);
