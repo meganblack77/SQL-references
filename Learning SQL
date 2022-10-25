@@ -47,3 +47,17 @@ PRIMARY KEY (supplier_id)
 );
 
 SELECT *, CONCAT(first_name, ' ', last_name) AS Employee_full_name FROM Employee;
+
+CREATE INDEX CoffeeName
+ON Coffee (coffee_name);
+
+SELECT supplier_id, company_name, country
+FROM Supplier
+WHERE country = 'Canada';
+
+//Joining multiple tables//
+
+SELECT first_name, city, coffee_name
+FROM Employee 
+JOIN Coffee_shop ON Employee.shop_id = Coffee_shop.shop_id
+JOIN Coffee ON Coffee_Shop.shop_id = Coffee.shop_id;
