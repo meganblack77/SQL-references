@@ -50,6 +50,9 @@ FOREIGN KEY (supplier_id) REFERENCES Supplier (supplier_id)
 
 SELECT *, CONCAT(first_name, ' ', last_name) AS Employee_full_name FROM Employee;
 
+//CREATE VIEW Employee_view AS//
+//SELECT Employee_id, CONCAT(first_name, ' ', last_name) AS Employee_full_name, hire_date, job_title, shop_id  FROM Employee;// 
+
 CREATE INDEX CoffeeName
 ON Coffee (coffee_name);
 
